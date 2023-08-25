@@ -22,5 +22,8 @@ class TextAnalyzer(object):
 analyzed = TextAnalyzer(givenstring)
 freqMap = analyzed.freq_all()
 
+frequency = analyzed.freq_of('lorem')
+
 print('Formated Text:', analyzed.formatted_text)
 print(freqMap)
+print("The word lorem appears",frequency,"times.")
